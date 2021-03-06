@@ -43,6 +43,7 @@ html {
 // Change outline of button on click
 
 // Button styles
+//Add custom style for on-click
 .primary {
   margin-top: 10px;
   background: $primary-color;
@@ -55,6 +56,9 @@ html {
     cursor: pointer;
     background: $primary-color-hover;
     border: 1px solid $primary-color-hover;
+  }
+  &:focus {
+    outline: none;
   }
 }
 .accent {
@@ -70,6 +74,9 @@ html {
     background: $accent-color-hover;
     border: 1px solid $accent-color-hover;
   }
+  &:focus {
+    outline: none;
+  }
 }
 .default {
   margin-top: 10px;
@@ -84,6 +91,9 @@ html {
     background: $default-color-hover;
     border: 1px solid $default-color-hover;
   }
+  &:focus {
+    outline: none;
+  }
 }
 .disabled {
   cursor: not-allowed;
@@ -95,6 +105,7 @@ html {
   border: 1px solid $disabled-color;
   border-radius: 6px;
 }
+
 // Form styles
 .textField {
   font-size: 1.25rem;

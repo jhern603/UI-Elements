@@ -48,6 +48,9 @@ html {
   background: #dd01dd;
   border: 1px solid #dd01dd;
 }
+.primary:focus {
+  outline: none;
+}
 
 .accent {
   margin-top: 10px;
@@ -63,6 +66,9 @@ html {
   background: #0083ee;
   border: 1px solid #0083ee;
 }
+.accent:focus {
+  outline: none;
+}
 
 .default {
   margin-top: 10px;
@@ -77,6 +83,9 @@ html {
   cursor: pointer;
   background: #616161;
   border: 1px solid #616161;
+}
+.default:focus {
+  outline: none;
 }
 
 .disabled {
