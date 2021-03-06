@@ -1,0 +1,119 @@
+$disabled-color: rgb(66, 66, 66);
+$primary-color: rgb(172, 5, 172);
+$primary-color-hover: rgb(221, 1, 221);
+$accent-color: rgb(5, 111, 172);
+$accent-color-hover: rgb(0, 131, 238);
+$default-color: rgb(77, 77, 77);
+$default-color-hover: rgb(97, 97, 97);
+
+* {
+  margin: 0;
+  color: white;
+  font-family: 'Open Sans', sans-serif !important;
+}
+html {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+}
+::placeholder {
+  vertical-align: bottom;
+  color: $default-color-hover;
+  font-size: 1.1rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+
+  padding: 50px 100px 50px 100px;
+  border: 15px solid transparent;
+  border-radius: 15px;
+  background: #2b2b2b;
+}
+
+.header {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+// Change outline of button on click
+
+// Button styles
+.primary {
+  margin-top: 10px;
+  background: $primary-color;
+  font-size: 20px;
+  padding: 15px 25px 15px 25px;
+  border: 1px solid $primary-color;
+  border-radius: 6px;
+  transition: all 0.3s;
+  &:hover {
+    cursor: pointer;
+    background: $primary-color-hover;
+    border: 1px solid $primary-color-hover;
+  }
+}
+.accent {
+  margin-top: 10px;
+  background: $accent-color;
+  font-size: 20px;
+  padding: 15px 25px 15px 25px;
+  border: 1px solid $accent-color;
+  border-radius: 6px;
+  transition: all 0.3s;
+  &:hover {
+    cursor: pointer;
+    background: $accent-color-hover;
+    border: 1px solid $accent-color-hover;
+  }
+}
+.default {
+  margin-top: 10px;
+  background: $default-color;
+  font-size: 20px;
+  padding: 15px 25px 15px 25px;
+  border: 1px solid $default-color;
+  border-radius: 6px;
+  transition: all 0.3s;
+  &:hover {
+    cursor: pointer;
+    background: $default-color-hover;
+    border: 1px solid $default-color-hover;
+  }
+}
+.disabled {
+  cursor: not-allowed;
+  margin-top: 10px;
+  background: $disabled-color;
+  color: rgb(160, 160, 160);
+  font-size: 20px;
+  padding: 15px 25px 15px 25px;
+  border: 1px solid $disabled-color;
+  border-radius: 6px;
+}
+// Form styles
+.textField {
+  font-size: 1.25rem;
+  color: white;
+  background: none;
+  border: none;
+  border-bottom: 2px solid $default-color;
+  transition: all 0.3s;
+
+  &:focus {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+  }
+}
+.checkbox {
+  display: inline-grid;
+  width: 1em;
+  height: 1em;
+  border-radius: 0.25em;
+  border: 0.1em solid $primary-color;
+}

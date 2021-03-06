@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  color: white;
+  font-family: "Open Sans", sans-serif !important;
+}
+
+html {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+::placeholder {
+  vertical-align: bottom;
+  color: #616161;
+  font-size: 1.1rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  padding: 50px 100px 50px 100px;
+  border: 15px solid transparent;
+  border-radius: 15px;
+  background: #2b2b2b;
+}
+
+.header {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.primary {
+  margin-top: 10px;
+  background: #ac05ac;
+  font-size: 20px;
+  padding: 15px 25px 15px 25px;
+  border: 1px solid #ac05ac;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+.primary:hover {
+  cursor: pointer;
+  background: #dd01dd;
+  border: 1px solid #dd01dd;
+}
+
+.accent {
+  margin-top: 10px;
+  background: #056fac;
+  font-size: 20px;
+  padding: 15px 25px 15px 25px;
+  border: 1px solid #056fac;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+.accent:hover {
+  cursor: pointer;
+  background: #0083ee;
+  border: 1px solid #0083ee;
+}
+
+.default {
+  margin-top: 10px;
+  background: #4d4d4d;
+  font-size: 20px;
+  padding: 15px 25px 15px 25px;
+  border: 1px solid #4d4d4d;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+.default:hover {
+  cursor: pointer;
+  background: #616161;
+  border: 1px solid #616161;
+}
+
+.disabled {
+  cursor: not-allowed;
+  margin-top: 10px;
+  background: #424242;
+  color: #a0a0a0;
+  font-size: 20px;
+  padding: 15px 25px 15px 25px;
+  border: 1px solid #424242;
+  border-radius: 6px;
+}
+
+.textField {
+  font-size: 1.25rem;
+  color: white;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #4d4d4d;
+  transition: all 0.3s;
+}
+.textField:focus {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid white;
+}
+
+.checkbox {
+  display: inline-grid;
+  width: 1em;
+  height: 1em;
+  border-radius: 0.25em;
+  border: 0.1em solid #ac05ac;
+}
+
+/*# sourceMappingURL=index.css.map */
