@@ -58,6 +58,8 @@ html {
     border: 1px solid $primary-color-hover;
   }
   &:focus {
+    background: $primary-color-hover;
+    border: 1px solid $primary-color-hover;
     outline: none;
   }
 }
@@ -75,6 +77,8 @@ html {
     border: 1px solid $accent-color-hover;
   }
   &:focus {
+    background: $accent-color-hover;
+    border: 1px solid $accent-color-hover;
     outline: none;
   }
 }
@@ -92,6 +96,8 @@ html {
     border: 1px solid $default-color-hover;
   }
   &:focus {
+    background: $default-color-hover;
+    border: 1px solid $default-color-hover;
     outline: none;
   }
 }
@@ -121,10 +127,49 @@ html {
     border-bottom: 2px solid white;
   }
 }
+
+// Checkbox styling
+
+// TODO: Figure out how to style when hovering and focused
 .checkbox {
+  display: grid;
+  grid-template-columns: min-content auto;
+  grid-gap: 0.3em;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.checkbox__input {
+  display: grid;
+  grid-template-areas: 'checkbox';
+
+  input {
+    opacity: 0;
+    width: 1em;
+    height: 1em;
+  }
+
+  > * {
+    grid-area: checkbox;
+    margin-top: -2.1px;
+  }
+
+  input:checked + .checkbox__control svg {
+    transform: scale(1);
+  }
+}
+
+.checkbox__control {
   display: inline-grid;
   width: 1em;
   height: 1em;
+  border: 0.15em solid $primary-color;
   border-radius: 0.25em;
-  border: 0.1em solid $primary-color;
+
+  svg {
+    transition: transform 0.1s ease-in 25ms;
+    filter: invert(48%) sepia(79%) saturate(400%) hue-rotate(270deg)
+      brightness(70%) contrast(100%);
+    transform: scale(0);
+  }
 }

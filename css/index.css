@@ -49,6 +49,8 @@ html {
   border: 1px solid #dd01dd;
 }
 .primary:focus {
+  background: #dd01dd;
+  border: 1px solid #dd01dd;
   outline: none;
 }
 
@@ -67,6 +69,8 @@ html {
   border: 1px solid #0083ee;
 }
 .accent:focus {
+  background: #0083ee;
+  border: 1px solid #0083ee;
   outline: none;
 }
 
@@ -85,6 +89,8 @@ html {
   border: 1px solid #616161;
 }
 .default:focus {
+  background: #616161;
+  border: 1px solid #616161;
   outline: none;
 }
 
@@ -114,11 +120,41 @@ html {
 }
 
 .checkbox {
+  display: grid;
+  grid-template-columns: min-content auto;
+  grid-gap: 0.3em;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.checkbox__input {
+  display: grid;
+  grid-template-areas: "checkbox";
+}
+.checkbox__input input {
+  opacity: 0;
+  width: 1em;
+  height: 1em;
+}
+.checkbox__input > * {
+  grid-area: checkbox;
+  margin-top: -2.1px;
+}
+.checkbox__input input:checked + .checkbox__control svg {
+  transform: scale(1);
+}
+
+.checkbox__control {
   display: inline-grid;
   width: 1em;
   height: 1em;
+  border: 0.15em solid #ac05ac;
   border-radius: 0.25em;
-  border: 0.1em solid #ac05ac;
+}
+.checkbox__control svg {
+  transition: transform 0.1s ease-in 25ms;
+  filter: invert(48%) sepia(79%) saturate(400%) hue-rotate(270deg) brightness(70%) contrast(100%);
+  transform: scale(0);
 }
 
 /*# sourceMappingURL=index.css.map */
