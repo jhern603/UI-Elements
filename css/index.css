@@ -43,14 +43,15 @@ html {
   border-radius: 6px;
   transition: all 0.3s;
 }
-.primary:hover {
+.primary:hover, .primary:focus {
   cursor: pointer;
   background: #dd01dd;
   border: 1px solid #dd01dd;
+  outline: none;
 }
-.primary:focus {
-  background: #dd01dd;
-  border: 1px solid #dd01dd;
+.primary:active {
+  background: #ac05ac;
+  border: 1px solid #ac05ac;
   outline: none;
 }
 
@@ -63,14 +64,15 @@ html {
   border-radius: 6px;
   transition: all 0.3s;
 }
-.accent:hover {
+.accent:hover, .accent:focus {
   cursor: pointer;
   background: #0083ee;
   border: 1px solid #0083ee;
+  outline: none;
 }
-.accent:focus {
-  background: #0083ee;
-  border: 1px solid #0083ee;
+.accent:active {
+  background: #056fac;
+  border: 1px solid #056fac;
   outline: none;
 }
 
@@ -83,14 +85,15 @@ html {
   border-radius: 6px;
   transition: all 0.3s;
 }
-.default:hover {
+.default:hover, .default:focus {
   cursor: pointer;
   background: #616161;
   border: 1px solid #616161;
+  outline: none;
 }
-.default:focus {
-  background: #616161;
-  border: 1px solid #616161;
+.default:active {
+  background: #4d4d4d;
+  border: 1px solid #4d4d4d;
   outline: none;
 }
 
@@ -107,15 +110,16 @@ html {
 
 .textField {
   font-size: 1.25rem;
-  color: white;
   background: none;
   border: none;
-  border-bottom: 2px solid #4d4d4d;
   transition: all 0.3s;
+  color: #4d4d4d;
+  border-bottom: 2px solid #4d4d4d;
 }
 .textField:focus {
   outline: none;
   border: none;
+  color: white;
   border-bottom: 2px solid white;
 }
 

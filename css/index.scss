@@ -52,14 +52,17 @@ html {
   border: 1px solid $primary-color;
   border-radius: 6px;
   transition: all 0.3s;
-  &:hover {
+  &:hover,
+  &:focus {
     cursor: pointer;
     background: $primary-color-hover;
     border: 1px solid $primary-color-hover;
+    outline: none;
   }
-  &:focus {
-    background: $primary-color-hover;
-    border: 1px solid $primary-color-hover;
+
+  &:active {
+    background: $primary-color;
+    border: 1px solid $primary-color;
     outline: none;
   }
 }
@@ -71,14 +74,16 @@ html {
   border: 1px solid $accent-color;
   border-radius: 6px;
   transition: all 0.3s;
-  &:hover {
+  &:hover,
+  &:focus {
     cursor: pointer;
     background: $accent-color-hover;
     border: 1px solid $accent-color-hover;
+    outline: none;
   }
-  &:focus {
-    background: $accent-color-hover;
-    border: 1px solid $accent-color-hover;
+  &:active {
+    background: $accent-color;
+    border: 1px solid $accent-color;
     outline: none;
   }
 }
@@ -90,14 +95,16 @@ html {
   border: 1px solid $default-color;
   border-radius: 6px;
   transition: all 0.3s;
-  &:hover {
+  &:hover,
+  &:focus {
     cursor: pointer;
     background: $default-color-hover;
     border: 1px solid $default-color-hover;
+    outline: none;
   }
-  &:focus {
-    background: $default-color-hover;
-    border: 1px solid $default-color-hover;
+  &:active {
+    background: $default-color;
+    border: 1px solid $default-color;
     outline: none;
   }
 }
@@ -115,21 +122,21 @@ html {
 // Form styles
 .textField {
   font-size: 1.25rem;
-  color: white;
   background: none;
   border: none;
-  border-bottom: 2px solid $default-color;
   transition: all 0.3s;
+  color: $default-color;
+  border-bottom: 2px solid $default-color;
 
   &:focus {
     outline: none;
     border: none;
+    color: white;
     border-bottom: 2px solid white;
   }
 }
 
 // Checkbox styling
-
 // TODO: Figure out how to style when hovering and focused
 .checkbox {
   display: grid;
